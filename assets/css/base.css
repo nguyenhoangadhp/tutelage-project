@@ -1,0 +1,12 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Poppins, sans-serif;
+}
+
+/*# sourceMappingURL=base.css.map */

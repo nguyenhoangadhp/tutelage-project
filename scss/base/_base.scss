@@ -1,0 +1,142 @@
+@use "../abstracts";
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Neurial Grotesk, sans-serif;
+    color: var(--primary-text-color);
+}
+
+:root {
+    --primary-color: #ffee00;
+    --second-color: #434ec4;
+    --primary-text-color: #0b0d21;
+    --desc-text-color: #686977;
+    --desc-second-text-color: #83848c;
+    --bg-color: #fdf0df;
+}
+
+a {
+    text-decoration: none;
+}
+
+// Common
+button {
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 15px 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 155.556%;
+
+    &--primary {
+        background: var(--primary-color);
+    }
+
+    &--second {
+        background: var(--primary-text-color);
+        color: #fff;
+
+        &-small {
+            font-size: 1.6rem;
+            padding: 8px 25px;
+        }
+    }
+
+    &--text {
+        background: #fff;
+        border-radius: 6px;
+        border: 1px solid #0b0d21;
+    }
+}
+
+// Heading - Paragraph / Descript
+.heading--second {
+    font-size: 4.2rem;
+    font-weight: 800;
+    line-height: 123.81%;
+
+    @include abstracts.breakpoint(sm) {
+        font-size: 2.6rem;
+    }
+}
+
+.heading-third {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.heading--fourth {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 155.556%;
+}
+
+.desc--primary {
+    font-size: 1.8rem;
+    color: var(--desc-text-color);
+    font-weight: 400;
+    line-height: 155.556%;
+
+    @include abstracts.breakpoint(sm) {
+        font-size: 1.4rem;
+    }
+}
+
+.desc--second {
+    font-size: 1.6rem;
+    color: var(--desc-text-color);
+    font-weight: 400;
+    line-height: 162.5%;
+}
+
+// Responsive
+.dp-none {
+    display: none !important;
+}
+
+.hide-on-xl {
+    @include abstracts.breakpoint(xl) {
+        display: none !important;
+    }
+}
+
+.hide-on-tab {
+    @include abstracts.breakpoint(lg) {
+        display: none !important;
+    }
+}
+
+.show-on-tab {
+    @include abstracts.breakpoint(lg) {
+        display: block !important;
+    }
+}
+
+.hide-on-desk {
+    @include abstracts.breakpoint(xxl) {
+        display: none !important;
+    }
+}

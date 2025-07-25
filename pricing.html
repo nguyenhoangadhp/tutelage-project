@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>tutelage</title>
+
+        <!-- Css -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Animate -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Font -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <!-- Slide show -->
+        <div class="slide-show" id="slideshow">
+            <script>
+                load("#slideshow", "./template/slideshow.html");
+            </script>
+        </div>
+
+        <!-- Header -->
+        <header class="header" id="header">
+            <script>
+                load("#header", "./template/header-pricing.html");
+            </script>
+        </header>
+
+        <!-- Pricing -->
+        <div class="pricing">
+            <div class="pricing__wrap">
+                <div class="container">
+                    <h1 class="heading--second pricing__heading">Pricing</h1>
+
+                    <div class="pricing-cards">
+                        <div class="row row-cols-3 row-cols-lg-1 gy-lg-3">
+                            <!-- Pricing card 1 -->
+                            <div class="col">
+                                <div class="pricing-card">
+                                    <div class="pricing-card__wrap">
+                                        <h3 class="heading--third pricing-card__type">Basic</h3>
+                                        <div class="pricing-card__cost">
+                                            <h2 class="pricing-card__cost-title">Free</h2>
+                                            <span class="desc--second pricing-card__cost-time"></span>
+                                        </div>
+                                        <p class="desc--second pricing-card__desc">
+                                            Interactive lessons & daily practice.
+                                        </p>
+                                        <div class="pricing-card-list">
+                                            <div class="pricing-card-item">
+                                                <img
+                                                    class="pricing-card-item__icon"
+                                                    src="./assets/icons/check.svg"
+                                                    alt=""
+                                                />
+                                                <span class="desc--second pricing-card-item__desc">Basic Courses</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="btn pricing-card__btn btn--second btn--second-small">
+                                            Get Started Free
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pricing card 2 -->
+                            <div class="col">
+                                <div class="pricing-card">
+                                    <h3 class="heading--third pricing-card__type">Professional</h3>
+                                    <div class="pricing-card__cost">
+                                        <h2 class="pricing-card__cost-title">$50</h2>
+                                        <span class="desc--second pricing-card__cost-time">/ month</span>
+                                    </div>
+                                    <p class="desc--second pricing-card__desc">
+                                        Learn a skill with courses, skill paths, and projects.
+                                    </p>
+                                    <div class="pricing-card-list">
+                                        <div class="pricing-card-item">
+                                            <img
+                                                class="pricing-card-item__icon"
+                                                src="./assets/icons/check.svg"
+                                                alt=""
+                                            />
+                                            <span class="desc--second pricing-card-item__desc">Basic Courses</span>
+                                        </div>
+                                        <div class="pricing-card-item">
+                                            <img
+                                                class="pricing-card-item__icon"
+                                                src="./assets/icons/check.svg"
+                                                alt=""
+                                            />
+                                            <span class="desc--second pricing-card-item__desc">Pro Courses</span>
+                                        </div>
+                                        <div class="pricing-card-item">
+                                            <img
+                                                class="pricing-card-item__icon"
+                                                src="./assets/icons/check.svg"
+                                                alt=""
+                                            />
+                                            <span class="desc--second pricing-card-item__desc">Skill Paths</span>
+                                        </div>
+                                        <div class="pricing-card-item">
+                                            <img
+                                                class="pricing-card-item__icon"
+                                                src="./assets/icons/check.svg"
+                                                alt=""
+                                            />
+                                            <span class="desc--second pricing-card-item__desc"
+                                                >Interview Preparation</span
+                                            >
+                                        </div>
+                                        <div class="pricing-card-item">
+                                            <img
+                                                class="pricing-card-item__icon"
+                                                src="./assets/icons/check.svg"
+                                                alt=""
+                                            />
+                                            <span class="desc--second pricing-card-item__desc">Pro Courses</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="btn pricing-card__btn btn--second btn--second-small">
+                                            Get Started
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pricing card 3 -->
+                            <div class="col">
+                                <div class="pricing-card">
+                                    <h3 class="heading--third pricing-card__type">Enterprise plan</h3>
+                                    <div class="pricing-card__cost">
+                                        <h2 class="pricing-card__cost-title">$250</h2>
+                                        <span class="desc--second pricing-card__cost-time">/ yearly</span>
+                                    </div>
+                                    <p class="desc--second pricing-card__desc">
+                                        Develop a career with courses, career paths, projects, and interview prep.
+                                    </p>
+                                    <div class="pricing-card-list">
+                                        <div class="pricing-card-item">
+                                            <img
+                                                class="pricing-card-item__icon"
+                                                src="./assets/icons/check.svg"
+                                                alt=""
+                                            />
+                                            <span class="desc--second pricing-card-item__desc"
+                                                >All features in standard</span
+                                            >
+                                        </div>
+                                        <div class="pricing-card-item">
+                                            <img
+                                                class="pricing-card-item__icon"
+                                                src="./assets/icons/check.svg"
+                                                alt=""
+                                            />
+                                            <span class="desc--second pricing-card-item__desc">Pro Courses</span>
+                                        </div>
+                                        <div class="pricing-card-item">
+                                            <img
+                                                class="pricing-card-item__icon"
+                                                src="./assets/icons/check.svg"
+                                                alt=""
+                                            />
+                                            <span class="desc--second pricing-card-item__desc">Skill Paths</span>
+                                        </div>
+                                        <div class="pricing-card-item">
+                                            <img
+                                                class="pricing-card-item__icon"
+                                                src="./assets/icons/check.svg"
+                                                alt=""
+                                            />
+                                            <span class="desc--second pricing-card-item__desc"
+                                                >Interview Preparation</span
+                                            >
+                                        </div>
+                                        <div class="pricing-card-item">
+                                            <img
+                                                class="pricing-card-item__icon"
+                                                src="./assets/icons/check.svg"
+                                                alt=""
+                                            />
+                                            <span class="desc--second pricing-card-item__desc">Pro Courses</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="btn pricing-card__btn btn--second btn--second-small">
+                                            Get Started
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
+    </footer>
+</html>

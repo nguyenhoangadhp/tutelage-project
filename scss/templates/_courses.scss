@@ -1,0 +1,230 @@
+@use "../abstracts";
+
+// Popular
+.popular-courses {
+    padding: 100px 0;
+    background: var(--bg-color);
+
+    @include abstracts.breakpoint(md) {
+        padding: 55px 0;
+    }
+
+    &__heading,
+    &__desc {
+        width: 570px;
+        text-align: center;
+        margin: 0 auto;
+
+        @include abstracts.breakpoint(md) {
+            width: 95%;
+        }
+    }
+
+    &__desc {
+        margin-top: 20px;
+    }
+
+    &__list {
+        margin-top: 70px;
+    }
+
+    &-item {
+        padding: 20px;
+        border-radius: 12px;
+        background: #fff;
+
+        &__img {
+            width: 100%;
+        }
+
+        &__name {
+            margin-top: 20px;
+            color: var(--second-color);
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 171.429%;
+        }
+
+        &__title {
+            margin: 12px 0;
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 155.556%;
+        }
+
+        &__user,
+        &__block {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        &__block-detail {
+            color: var(--desc-text-color);
+        }
+
+        &__analys {
+            margin-top: 17px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__ava {
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        &__username {
+            color: var(--desc-second-text-color);
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 162.5%;
+        }
+
+        &__bot {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &-price {
+                font-size: 1.8rem;
+                font-weight: 700;
+                line-height: 155.556%;
+            }
+
+            &-btn {
+                transition: all 0.25s;
+            }
+
+            &-btn:hover {
+                border-color: var(--primary-color);
+                background: var(--primary-color);
+            }
+        }
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 55px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+// End popular courses
+
+.popular-tropics {
+    &-item {
+        height: 100%;
+        border-radius: 12px;
+        border: 1px solid #e9eaf0;
+
+        &:hover {
+            border-color: transparent;
+            box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+        }
+    }
+
+    &__heading {
+        width: 570px;
+        text-align: center;
+        margin: 100px auto;
+
+        @include abstracts.breakpoint(md) {
+            width: 95%;
+            margin: 50px 0;
+        }
+    }
+
+    &__instruct {
+        position: relative;
+        margin-bottom: 100px;
+
+        @include abstracts.breakpoint(md) {
+            margin-bottom: 50px;
+        }
+
+        &-img {
+            width: 100%;
+        }
+
+        &-name {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        &-desc {
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        &-direct {
+            @include abstracts.breakpoint(lg) {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                margin-top: 40px;
+            }
+        }
+
+        &-back,
+        &-next {
+            position: absolute;
+            top: 50%;
+            width: 60px;
+            height: 60px;
+            background: #fff;
+            color: var(--desc-text-color);
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #e9eaf0;
+            border-radius: 50%;
+            transition: all 0.25s;
+            cursor: pointer;
+
+            &-icon {
+                width: 30px;
+                transform: translateX(25%);
+
+                @include abstracts.breakpoint(lg) {
+                    transform: translateX(0);
+                }
+            }
+
+            &:hover {
+                background: #f2994a;
+                color: #fff;
+                border-color: transparent;
+            }
+
+            @include abstracts.breakpoint(lg) {
+                position: relative;
+            }
+        }
+
+        &-back {
+            left: 0;
+            transform: translateX(-50%);
+
+            @include abstracts.breakpoint(lg) {
+                transform: translateX(0);
+            }
+        }
+
+        &-next {
+            right: 0;
+            transform: translateX(50%);
+            @include abstracts.breakpoint(lg) {
+                transform: translateX(0);
+            }
+        }
+    }
+}

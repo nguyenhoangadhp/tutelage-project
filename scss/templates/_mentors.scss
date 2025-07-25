@@ -1,0 +1,12 @@
+@use "../abstracts";
+
+.mentors {
+    background: var(--bg-color);
+    &__heading {
+        text-align: center;
+
+        @include abstracts.breakpoint(lg) {
+            font-size: 4.2rem;
+        }
+    }
+}
