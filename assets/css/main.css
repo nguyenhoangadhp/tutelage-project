@@ -2266,8 +2266,58 @@ button {
 }
 @media (max-width: 991.98px) {
   .mentors__heading {
-    font-size: 4.2rem;
+    font-size: 2.4rem;
   }
+}
+.mentors-wrap {
+  margin-top: 70px;
+}
+.mentors-item {
+  border-radius: 24px 24px 12px 12px;
+  background: #fff;
+  height: 100%;
+  overflow: hidden;
+}
+.mentors-item__ava {
+  position: relative;
+}
+.mentors-item__ava-img {
+  display: block;
+  width: 100%;
+}
+.mentors-item__ava-like, .mentors-item__ava-send {
+  position: absolute;
+}
+.mentors-item__ava-like {
+  top: 10px;
+  right: 10px;
+}
+.mentors-item__ava-send {
+  bottom: 0;
+  left: 20px;
+  transform: translateY(50%);
+}
+.mentors-item__name-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.mentors-item__content {
+  padding: 42px 20px 20px 20px;
+}
+.mentors-item__row {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.mentors-item__col {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.mentors-item__col-desc {
+  white-space: nowrap;
 }
 
 /*# sourceMappingURL=main.css.map */
