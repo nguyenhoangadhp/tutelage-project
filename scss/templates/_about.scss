@@ -1,0 +1,199 @@
+@use "../abstracts";
+
+.about {
+    // Introduce
+    &__intro {
+        padding: 50px 0;
+        text-align: center;
+        background: var(--second-color);
+
+        &-title {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 120%;
+            margin-bottom: 30px;
+        }
+
+        &-heading {
+            color: #fff;
+            line-height: 1.2;
+
+            @include abstracts.breakpoint(md) {
+                font-size: 2.4rem;
+            }
+        }
+
+        &-btn {
+            margin-top: 35px;
+            color: #fff;
+            background: var(--second-color);
+            border: 1px solid #fdf0df;
+            padding: 17px 30px;
+            border-radius: 5px;
+            font-size: 1.6rem;
+            font-weight: 700;
+            transition: all 0.25s;
+
+            &:hover {
+                color: var(--primary-color);
+                border-color: var(--primary-color);
+            }
+        }
+    }
+
+    // Illustration
+    &__illus {
+        background: var(--bg-color);
+        padding: 100px 0;
+
+        @include abstracts.breakpoint(lg) {
+            padding: 50px 0 40px 0;
+        }
+
+        &-wrap {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            align-items: center;
+            gap: 30px;
+
+            @include abstracts.breakpoint(lg) {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &-desc {
+            color: #000;
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 133.333%;
+
+            @include abstracts.breakpoint(md) {
+                font-size: 1.4rem;
+            }
+
+            & b {
+                font-weight: 600;
+            }
+        }
+
+        &-media {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &-img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    // Report
+    &__report {
+        margin: 100px 0;
+
+        &-heading {
+            text-align: center;
+
+            @include abstracts.breakpoint(md) {
+                font-size: 2.4rem;
+            }
+        }
+
+        &-desc {
+            margin-top: 20px;
+        }
+
+        &-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            line-height: 114.286%;
+        }
+
+        &-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-btn {
+            transition: all 0.25s;
+            @include abstracts.breakpoint(md) {
+                font-size: 1.6rem;
+            }
+
+            &:hover {
+                opacity: 0.8;
+                transform: translateY(2%);
+            }
+        }
+
+        &-btn-wrap {
+            text-align: center;
+            margin: 30px 0 70px 0;
+        }
+
+        &-content {
+            padding: 0 30px;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            align-items: center;
+            gap: 60px;
+
+            @include abstracts.breakpoint(xl) {
+                grid-template-columns: 1fr;
+            }
+
+            &-img {
+                width: 100%;
+            }
+        }
+
+        &-direct {
+            font-size: 2.4rem;
+            cursor: pointer;
+
+            &-wrap {
+                display: none;
+
+                @include abstracts.breakpoint(xl) {
+                    display: flex !important;
+                    justify-content: center;
+                    gap: 120px;
+                }
+            }
+        }
+    }
+
+    // Story
+    &__story {
+        margin-bottom: 100px;
+        &-wrap {
+            display: grid;
+            grid-template-columns: 1fr 1.8fr;
+            gap: 40px;
+            align-items: center;
+
+            @include abstracts.breakpoint(lg) {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &-heading {
+            @include abstracts.breakpoint(md) {
+                font-size: 2.4rem;
+            }
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &-desc b {
+            font-weight: 700;
+            color: initial;
+        }
+    }
+}

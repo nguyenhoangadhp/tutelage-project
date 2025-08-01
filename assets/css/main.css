@@ -168,6 +168,7 @@ button {
 }
 
 .btn {
+  font-family: inherit;
   padding: 15px 35px;
   display: inline-flex;
   align-items: center;
@@ -180,6 +181,9 @@ button {
 }
 .btn--primary {
   background: var(--primary-color);
+}
+.btn--primary-border {
+  border: 1px solid var(--primary-text-color);
 }
 .btn--second {
   background: var(--primary-text-color);
@@ -250,6 +254,12 @@ button {
 @media (max-width: 991.98px) {
   .hide-on-tab {
     display: none !important;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .show-on-xl {
+    display: block !important;
   }
 }
 
@@ -2293,7 +2303,7 @@ button {
   right: 10px;
 }
 .mentors-item__ava-send {
-  bottom: 0;
+  bottom: -5px;
   left: 20px;
   transform: translateY(50%);
 }
@@ -2318,6 +2328,182 @@ button {
 }
 .mentors-item__col-desc {
   white-space: nowrap;
+}
+
+.about__intro {
+  padding: 50px 0;
+  text-align: center;
+  background: var(--second-color);
+}
+.about__intro-title {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+.about__intro-heading {
+  color: #fff;
+  line-height: 1.2;
+}
+@media (max-width: 767.98px) {
+  .about__intro-heading {
+    font-size: 2.4rem;
+  }
+}
+.about__intro-btn {
+  margin-top: 35px;
+  color: #fff;
+  background: var(--second-color);
+  border: 1px solid #fdf0df;
+  padding: 17px 30px;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  transition: all 0.25s;
+}
+.about__intro-btn:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.about__illus {
+  background: var(--bg-color);
+  padding: 100px 0;
+}
+@media (max-width: 991.98px) {
+  .about__illus {
+    padding: 50px 0 40px 0;
+  }
+}
+.about__illus-wrap {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 991.98px) {
+  .about__illus-wrap {
+    grid-template-columns: 1fr;
+  }
+}
+.about__illus-desc {
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 133.333%;
+}
+@media (max-width: 767.98px) {
+  .about__illus-desc {
+    font-size: 1.4rem;
+  }
+}
+.about__illus-desc b {
+  font-weight: 600;
+}
+.about__illus-media {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.about__illus-img {
+  display: block;
+  width: 100%;
+}
+.about__report {
+  margin: 100px 0;
+}
+.about__report-heading {
+  text-align: center;
+}
+@media (max-width: 767.98px) {
+  .about__report-heading {
+    font-size: 2.4rem;
+  }
+}
+.about__report-desc {
+  margin-top: 20px;
+}
+.about__report-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 114.286%;
+}
+.about__report-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about__report-btn {
+  transition: all 0.25s;
+}
+@media (max-width: 767.98px) {
+  .about__report-btn {
+    font-size: 1.6rem;
+  }
+}
+.about__report-btn:hover {
+  opacity: 0.8;
+  transform: translateY(2%);
+}
+.about__report-btn-wrap {
+  text-align: center;
+  margin: 30px 0 70px 0;
+}
+.about__report-content {
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+@media (max-width: 1199.98px) {
+  .about__report-content {
+    grid-template-columns: 1fr;
+  }
+}
+.about__report-content-img {
+  width: 100%;
+}
+.about__report-direct {
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+.about__report-direct-wrap {
+  display: none;
+}
+@media (max-width: 1199.98px) {
+  .about__report-direct-wrap {
+    display: flex !important;
+    justify-content: center;
+    gap: 120px;
+  }
+}
+.about__story {
+  margin-bottom: 100px;
+}
+.about__story-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  gap: 40px;
+  align-items: center;
+}
+@media (max-width: 991.98px) {
+  .about__story-wrap {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 767.98px) {
+  .about__story-heading {
+    font-size: 2.4rem;
+  }
+}
+.about__story-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about__story-desc b {
+  font-weight: 700;
+  color: initial;
 }
 
 /*# sourceMappingURL=main.css.map */

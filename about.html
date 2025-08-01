@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>tutelage</title>
+
+        <!-- Css -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Animate -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Font -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <!-- Slide show -->
+        <div class="slide-show" id="slideshow">
+            <script>
+                load("#slideshow", "./template/slideshow.html");
+            </script>
+        </div>
+
+        <!-- Header -->
+        <header class="header" id="header">
+            <script>
+                load("#header", "./template/header-courses.html");
+            </script>
+        </header>
+
+        <div class="about">
+            <!-- Introduce -->
+            <div class="about__intro">
+                <div class="container">
+                    <p class="about__intro-title">Our Vision</p>
+                    <h2 class="about__intro-heading heading--second">
+                        We envision a world where anyone, anywhere has the power to transform their life through
+                        learning.
+                    </h2>
+                    <button class="about__intro-btn">Hear from our community</button>
+                </div>
+            </div>
+
+            <!-- Illustration -->
+            <div class="about__illus">
+                <div class="container">
+                    <div class="about__illus-wrap">
+                        <p class="about__illus-desc">
+                            Tutelage partners with <b>more than 275 leading universities</b> and companies to bring
+                            flexible, affordable, job-relevant online learning to individuals and organizations
+                            worldwide. We offer a range of learning opportunities—from hands-on projects and courses to
+                            job-ready certificates and degree programs.
+                        </p>
+
+                        <div class="about__illus-media">
+                            <img src="./assets/images/about-illus-01.png" alt="" class="about__illus-img" />
+                            <img src="./assets/images/about-illus-02.png" alt="" class="about__illus-img" />
+                            <img src="./assets/images/about-illus-03.png" alt="" class="about__illus-img" />
+                            <img src="./assets/images/about-illus-04.png" alt="" class="about__illus-img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Report -->
+            <div class="about__report">
+                <div class="container">
+                    <h2 class="about__report-heading heading--second">Serving the world through learning</h2>
+                    <div class="about__report-btn-wrap">
+                        <button class="btn btn--primary btn--primary-border about__report-btn">
+                            Read our 2022 Impact Report
+                        </button>
+                    </div>
+
+                    <div class="about__report-wrap">
+                        <img src="./assets/icons/back.svg" alt="" class="about__report-direct hide-on-xl" />
+                        <div class="about__report-content">
+                            <div class="about__report-content-left">
+                                <h3 class="about__report-title">
+                                    107+ million learners around the world are building new skills and confidence.
+                                </h3>
+                                <p class="desc--primary about__report-desc">
+                                    "As refugees, we are deprived of basic rights like education. I have missed out on
+                                    many years of my education, and Coursera gave me the platform to compensate for all
+                                    those missed years. I completed the Creative Writing Specialization from Wesleyan
+                                    University, which helped me improve my writing skills and get one step closer
+                                    towards my dream of becoming a writer"
+                                </p>
+                            </div>
+                            <div class="about__report-content-media">
+                                <img
+                                    src="./assets/images/about-report-01.png"
+                                    alt=""
+                                    class="about__report-content-img"
+                                />
+                            </div>
+                            <div class="about__report-direct-wrap show-on-xl">
+                                <img src="./assets/icons/back.svg" alt="" class="about__report-direct" />
+                                <img src="./assets/icons/next.svg" alt="" class="about__report-direct" />
+                            </div>
+                        </div>
+                        <img src="./assets/icons/next.svg" alt="" class="about__report-direct hide-on-xl" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Story -->
+            <div class="about__story">
+                <div class="container">
+                    <div class="about__story-wrap">
+                        <div class="about__illus-media">
+                            <img src="./assets/images/about-illus-01.png" alt="" class="about__illus-img" />
+                            <img src="./assets/images/about-illus-02.png" alt="" class="about__illus-img" />
+                            <img src="./assets/images/about-illus-03.png" alt="" class="about__illus-img" />
+                            <img src="./assets/images/about-illus-04.png" alt="" class="about__illus-img" />
+                        </div>
+
+                        <div class="about__story-content">
+                            <h2 class="about__story-heading heading--second">Our story</h2>
+                            <p class="desc--second about__story-desc">
+                                Tutelage was founded by Daphne Koller and Andrew Ng in 2012 with a vision of providing
+                                life- transforming learning experiences to learners around the world. Today, Coursera is
+                                a global online learning platform that offers anyone, anywhere, access to online courses
+                                and degrees from leading universities and companies. Coursera received B Corp
+                                certification in February 2021, which means that we have a legal duty not only to our
+                                shareholders, but to also make a positive impact on society more broadly, as we continue
+                                our efforts to reduce barriers to world-class education for all.
+                            </p>
+                            <p class="desc--second about__story-desc">
+                                <b>107 million learners and more than 7,000 campuses, businesses, and governments</b>
+                                have come to Coursera to access world-class learning—anytime, anywhere.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Outroduce -->
+            <div class="about__intro">
+                <div class="container">
+                    <h2 class="about__intro-heading heading--second">
+                        Join our global community of progress makers and start learning today!
+                    </h2>
+                    <button class="about__intro-btn">Join now</button>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
+    </footer>
+</html>
